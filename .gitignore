@@ -1,0 +1,29 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.cache/
+*.egg-info/
+.DS_Store
+# datasets, databases, exports (CC BY-NC-ND 4.0: never redistribute)
+data/raw/*
+!data/raw/.gitkeep
+data/*.duckdb
+*.duckdb
+*.duckdb.wal
+*.wal
+*.csv
+*.zip
+exports/
+tmp/
+# credentials
+.env
+*.key
+*.pem
+credentials*
+# local investigation cases live inside the DuckDB file (already ignored); also ignore app artefacts
+.streamlit/secrets.toml
+*.log
+*.db
+*.sqlite
+data/exports/
